@@ -50,11 +50,10 @@ body {
 main {
     max-width: var(--container);
     margin: 0 auto;
-    padding: 40px 20px;
-
+    padding: 20px 20px;
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 10px;
 }
 
 section {
@@ -127,15 +126,14 @@ nav ul a:hover {
     display:flex;
     justify-content:space-between;
     align-items:center;
-    gap:40px;
-
-    padding:60px 0;
+    gap: 40px;
+    padding:20px 0;
 }
 
 .hero-text h1 {
     font-size: 36px;
     font-weight: 800;
-    margin-top: 60px;
+    margin-top: 20px;
 }
 
 .hero-text .desc {
@@ -149,6 +147,41 @@ nav ul a:hover {
     object-fit: cover;
     object-position: center top;
     border-radius: 16px;
+}
+
+.read-more{
+
+    margin-top: auto;      /* ⭐ 這就是關鍵 */
+
+    align-self: flex-end;  /* 靠右 */
+
+    text-decoration: none;
+
+    color: #2E6CF6;
+
+    font-weight: 600;
+
+    transition: .2s;
+}
+
+.read-more span{
+
+    transition:.2s;
+
+}
+
+.read-more:hover{
+
+    color: #1F56D6;
+
+    transform: translateX(4px);
+
+}
+
+.read-more:hover span{
+
+    transform:translateX(5px);
+
 }
 
 /* =======================
@@ -175,7 +208,7 @@ nav ul a:hover {
 ======================= */
 
 .about{
-    padding-top:60px;
+    padding-top:30px;
 }
 
 .about h1 {
@@ -278,7 +311,7 @@ padding-top:40px;
 
 #highlights article {
     background: var(--soft-bg);
-    padding: 50px 18px;
+    padding: 20px 18px;
     border-radius: 12px;
     border-left: 4px solid var(--primary);
 }
@@ -377,7 +410,7 @@ footer {
 }
 
 #projects{
-     padding-top:60px;
+     padding-top:30px;
 }
 
 #projects h1{
@@ -401,23 +434,18 @@ footer {
 }
 
 .project-card{
-
+    display: flex;
+    flex-direction: column;
     background:var(--soft-bg);
-
     border:1px solid var(--card-border);
-
     border-radius:18px;
-
     padding:24px;
-
     transition:.25s;
 }
 
 .project-card:hover{
-
-    transform:translateY(-6px);
-
-    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,.08)
 }
 
 .category{
@@ -495,7 +523,7 @@ footer {
 
 #learning{
     max-width:var(--container);
-    padding-top:60px;
+    padding-top:30px;
 }
 
 #learning h1{
@@ -526,16 +554,19 @@ footer {
 }
 
 .learning-card{
+    position:relative;
 
     background:var(--soft-bg);
 
     border:1px solid var(--card-border);
 
-    border-radius:18px;
+    border-radius:12px;
 
-    padding:28px;
+    padding:30px;
 
     transition:.3s;
+
+    min-height:300px;
 }
 
 .learning-card:hover{
@@ -570,17 +601,25 @@ footer {
 
 .status{
 
+    position:absolute;
+
+    bottom:20px;
+
+    right:20px;
+
     display:inline-block;
 
-    background:#EAF7EF;
+    background:var(--primary);
 
-    color:#2E7D32;
+    color:#fcfcfc;
 
     padding:6px 14px;
 
-    border-radius:999px;
+    border-radius:20px;
 
     font-size:14px;
 
     font-weight:600;
+    
+    margin:auto;
 }
