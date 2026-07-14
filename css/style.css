@@ -512,6 +512,10 @@ footer {
     font-weight:600;
 
     color:var(--primary);
+
+    margin-top: auto;
+    align-self: flex-end;
+
 }
 
 .project-btn:hover{
@@ -622,4 +626,144 @@ footer {
     font-weight:600;
     
     margin:auto;
+}
+
+/* ======================
+   Case Study
+====================== */
+.case-hero {
+    max-width: var(--container);
+    margin: 20px  60px;
+    padding: 0 20px;
+}
+
+.case-category {
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.case-hero h1 {
+    font-size: 42px;
+    margin-bottom: 25px;
+}
+
+.case-summary {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #666;
+}
+
+.case-section {
+
+    max-width: var(--container);
+    margin: 0  70px;
+    padding: 0 10px;
+
+}
+
+.case-section h2,
+.case-result h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.case-section ul {
+    padding-left: 20px;
+}
+
+.case-section p,
+.case-section li {
+
+    line-height: 1.8;
+    font-size: 16px;
+
+}
+
+.case-grid {
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+
+}
+
+.case-grid article {
+
+    background: var(--soft-bg);
+    padding:25px;
+    border-radius:12px;
+
+}
+
+.case-grid h3 {
+
+    margin-bottom:15px;
+
+}
+
+.case-result {
+
+    max-width: var(--container);
+    margin: 0 auto 60px;
+    padding: 40px;
+    background: var(--soft-bg);
+    border-radius: 16px;
+
+}
+
+.result-list{
+    text-align: left;
+}
+
+.result-list ul{
+    padding-left: 20px;
+    margin: 0;
+}
+
+.result-list li{
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.result-number strong {
+
+    display:block;
+    font-size:48px;
+    color:var(--primary);
+
+}
+
+.result-number span {
+
+    font-size:18px;
+
+}
+
+.back-button {
+
+    display:block;
+    width:max-content;
+    margin:40px auto;
+    padding:12px 24px;
+    border-radius:30px;
+    background:var(--primary);
+    color:white;
+    text-decoration:none;
+
+}
+
+
+@media(max-width:768px){
+
+    .case-hero h1{
+        font-size:32px;
+    }
+
+
+    .case-grid{
+        grid-template-columns:1fr;
+    }
+
 }
